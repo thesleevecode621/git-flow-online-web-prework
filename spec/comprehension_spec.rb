@@ -129,7 +129,7 @@ describe "GIT" do
 
   it "18. What is the one line syntax for creating and switching to a branch called 
      'add-nav-bar'?" do
-    answer = "?"
+    answer = "git checkout -b add-nav-bar"
     encoded_answer = "f6317616a8601aeb64c0f27f71a4b7bf9e3b8453"
     expect(encode(answer)).to eq(encoded_answer)
   end
@@ -137,7 +137,7 @@ describe "GIT" do
   it "19. 'git branch style-image' followed by 'git checkout style-image' 
       is the same as 'git checkout -b style-image'" do
     # "true" or "false", in a string
-    answer = "?"
+    answer = "true"
 
     encoded_answer = "5ffe533b830f08a0326348a9160afafc8ada44db"
     expect(encode(answer)).to eq(encoded_answer)
